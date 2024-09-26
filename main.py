@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 from app.models import Category, Post, User
 
-engine = create_engine("sqlite:///db.sqlite3", echo=False)
+engine = create_engine("postgresql+psycopg:///test_bd2_2024", echo=False)
 Session = sessionmaker(engine)
 
 
